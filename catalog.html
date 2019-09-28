@@ -98,58 +98,49 @@
   <h1>Перфораторы</h1>
   <section>
     <h2>Фильтр:</h2>
-    <p>
-      Цена:
-    </p>
-    <!-- Здесь будет ползунок -->
-    <p>
-      0
-    </p>
-    <p>
-      -
-    </p>
-    <p>
-      30000
-    </p>
-    <p>
-      Производители:
-    </p>
-    <ul>
-      <li>
-        <img src="img/checkbox-on.svg" width="27" height="23" alt="Выбрано">
-        BOSCH
-      </li>
-      <li>
-        <img src="img/checkbox-off.svg" width="23" height="23" alt="Не выбрано">
-        Интерскол
-      </li>
-      <li>
-        <img src="img/checkbox-on.svg" width="27" height="23" alt="Выбрано">
-        Makita
-      </li>
-      <li>
-        <img src="img/checkbox-off.svg" width="23" height="23" alt="Не выбрано">
-        Dewalt
-      </li>
-      <li>
-        <img src="img/checkbox-off.svg" width="23" height="23" alt="Не выбрано">
-        Hitachi
-      </li>
-    </ul>
-    <p>
-      Питание:
-    </p>
-    <ul>
-      <li>
-        <img src="img/radio-on.svg" width="25" height="25" alt="Выбрано">
-        Аккумуляторные
-      </li>
-      <li>
-        <img src="img/radio-off.svg" width="25" height="25" alt="Не выбрано">
-        Сетевые
-      </li>
-    </ul>
-    <button type="button">Показать</button>
+    <form action="#" method="post">
+      <p>
+        Цена:
+      </p>
+      <!-- Здесь будет ползунок -->
+      <p>
+        0
+      </p>
+      <p>
+        -
+      </p>
+      <p>
+        30000
+      </p>
+      <fieldset>
+        <h3>Производители:</h3>
+        <label>
+          <input type="checkbox" name="manufacturers" value="BOSCH" checked> BOSCH
+        </label>
+        <label>
+          <input type="checkbox" name="manufacturers" value="Интерскол"> Интерскол
+        </label>
+        <label>
+          <input type="checkbox" name="manufacturers" value="Makita" checked> Makita
+        </label>
+        <label>
+          <input type="checkbox" name="manufacturers" value="Dewalt"> Dewalt
+        </label>
+        <label>
+          <input type="checkbox" name="manufacturers" value="Hitachi"> Hitachi
+        </label>
+      </fieldset>
+      <fieldset>
+        <h3>Питание:</h3>
+        <label>
+          <input type="radio" name="power" value="battery" checked> Аккумуляторные
+        </label>
+        <label>
+          <input type="radio" name="power" value="electricity"> Сетевые
+        </label>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
   </section>
   <div>
     <section>
