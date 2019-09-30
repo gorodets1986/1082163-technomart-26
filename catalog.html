@@ -99,19 +99,15 @@
   <section>
     <h2>Фильтр:</h2>
     <form action="#" method="post">
-      <p>
-        Цена:
-      </p>
-      <!-- Здесь будет ползунок -->
-      <p>
-        0
-      </p>
-      <p>
-        -
-      </p>
-      <p>
-        30000
-      </p>
+      <fieldset>
+        <h3 class="visually-hidden">Цена:</h3>
+        <label>
+          Цена:
+          <input type="range" name="price" min="0" max="50000" step="1" value="30000">
+          <input type="number" name="price" min="0" max="50000" step="1" value="0"> -
+          <input type="number" name="price" min="0" max="50000" step="1" value="30000">
+        </label>
+      </fieldset>
       <fieldset>
         <h3>Производители:</h3>
         <label>
@@ -164,7 +160,7 @@
       </ul>
     </section>
     <section>
-      <h2>Товары</h2>
+      <h2 class="visually-hidden">Товары</h2>
       <ul>
         <li>
           <img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -349,7 +345,7 @@
       </ul>
     </section>
     <section>
-      <h2>Переключение страниц с товарами</h2>
+      <h2 class="visually-hidden">Переключение страниц с товарами</h2>
       <a href="">1</a>
       <a href="">2</a>
       <a href="">3</a>
@@ -437,7 +433,7 @@
   </div>
 </footer>
 <section>
-  <h2>Сообщение о добавлении товара</h2>
+  <h2 class="visually-hidden">Сообщение о добавлении товара</h2>
   <img src="img/product-on.png" width="66" height="66" alt="Товар добавлен">
   <p>
     Товар добавлен в корзину!
