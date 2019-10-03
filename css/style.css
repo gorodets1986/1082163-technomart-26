@@ -1,1 +1,494 @@
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic');
+
+a {
+  text-decoration: none;
+}
+
+img { max-width: 100% }
+
+ul {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.header {
+  background-color: #f2f6f8;
+}
+
+.header-menu {
+  background-color: #293449;
+}
+
+.logo {
+  background-color: #ee3643;
+  color: #ffffff;
+  border-bottom: darkred;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.header-menu-search {
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.header-menu-search:hover {
+   background-color: #212a3a;
+ }
+
+.header-menu-search:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header-menu-bookmarks {
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.header-menu-cart {
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.header-menu-bookmarks:hover,
+.header-menu-cart:hover {
+  background-color: #212a3a;
+}
+
+.header-menu-bookmarks:active,
+.header-menu-cart:active {
+  background-color: #161d29;
+  opacity: 0.6;
+}
+
+.header-menu-order {
+  background-color: #63a63e;
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.header-menu-order:hover {
+  background-color: #5fbb2d;
+}
+
+.header-menu-order:active {
+  background-color: #518534;
+  opacity: 0.5;
+}
+
+.header-info-description {
+  color: #ee3643;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.header-info-phone {
+  border: 3px solid #ffffff;
+}
+
+.header-info-phone p {
+  color: #e9292a;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.42px;
+}
+
+.header-info-address {
+  color: #32425c;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.login-link {
+  color: #000000;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.registration-link {
+  color: #000000;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.login-link:hover,
+.registration-link:hover {
+  color: #ee3643;
+}
+
+.login-link:active,
+.registration-link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.user-link {
+  color: #000000;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.user-link:active,
+.user-link:active p {
+  opacity: 0.3;
+}
+
+.logout-link img {
+  color: #c5c5c5;
+}
+
+.my-orders-link {
+  color: #32425c;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.personal-area-link {
+  color: #32425c;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.my-orders-link:hover,
+.personal-area-link:hover {
+  color: #ee3643;
+}
+
+.my-orders-link:active,
+.personal-area-link:active {
+  opacity: 0.3;
+  color: #32425c;
+}
+
+.site-navigation {
+  background-color: #32425c;
+  border-bottom: #32425c;
+}
+
+.site-navigation a {
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.site-navigation a:hover {
+  background-color: #1d2739;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+  opacity: 0.5;
+}
+
+.catalog-navigation a {
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-heading {
+  background-color: #f2f6f8;
+  color: #32425c;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-manufacturers h3 {
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.filter-manufacturers label {
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-power h3 {
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.05px;
+}
+
+.filter-power label {
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.catalog-products li {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.catalog-products li:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.catalog-products p:first-of-type {
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.catalog-products p:nth-of-type(2) {
+  color: #999999;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.catalog-products p:last-of-type {
+  color: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.company-description h2 {
+  color: #000000;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.company-description p {
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.company-description ul {
+  color: #000000;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.company-description a {
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.company-contacts h2 {
+  color: #000000;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.company-contacts p {
+  color: #000000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.company-contacts a:last-of-type {
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.footer-top {
+  background-color: #32425c;
+}
+
+.footer-navigation a {
+  color: #f1f5f7;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-middle {
+  background-color: #32425c;
+}
+
+.footer-middle p {
+  color: #f3f7f9;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-menu a {
+  color: #ffd180;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-navigation a:hover,
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active,
+.footer-menu a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-bottom p:first-of-type {
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.social-network li {
+  background-color: #212a3a;
+}
+
+.social-network li:hover,
+.social-network li:active {
+  background-color: #ee3643;
+}
+
+.social-network a {
+  color: #ffffff;
+}
+
+.footer-feedback {
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-feedback span {
+  color: #ffd180;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-designed {
+  color: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-designed a {
+  color: #ffd180;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-feedback span:hover,
+.footer-designed a:hover {
+  text-decoration: underline;
+}
+
+.footer-feedback span:active,
+.footer-designed a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
