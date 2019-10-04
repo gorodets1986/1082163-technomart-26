@@ -63,8 +63,8 @@ ul {
 }
 
 .header-menu-search:hover {
-   background-color: #212a3a;
- }
+  background-color: #212a3a;
+}
 
 .header-menu-search:focus {
   background-color: #ffffff;
@@ -240,6 +240,230 @@ ul {
   opacity: 0.5;
 }
 
+.category-materials h3,
+.category-tool h3,
+.category-technics h3,
+.category-discounts h3,
+.category-delivery h3 {
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.category-materials a,
+.category-tool a,
+.category-technics a,
+.category-discounts a,
+.category-delivery a {
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.category-materials a:hover,
+.category-tool a:hover,
+.category-technics a:hover,
+.category-discounts a:hover,
+.category-delivery a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.category-materials a:active,
+.category-tool a:active,
+.category-technics a:active,
+.category-discounts a:active,
+.category-delivery a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.category-materials,
+.category-delivery {
+  background-color: #ffbf47;
+}
+
+.category-tool {
+  background-color: #3bbce3;
+}
+
+.category-technics {
+  background-color: #dc91d8;
+}
+
+.category-discounts {
+  background-color: #8ed78f;
+}
+
+.category-drills {
+  background-image: url(/img/drill.jpg);
+  background-color: #644b34;
+}
+
+.category-rotary-hammers {
+  background-image: url(/img/rotary_hammers.jpg);
+  background-color: #aaa298;
+}
+
+.category-drills h3,
+.category-rotary-hammers h3 {
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.category-drills p,
+.category-rotary-hammers p {
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.category-drills a,
+.category-rotary-hammers a {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.category-drills a:hover,
+.category-rotary-hammers a:hover {
+  background-color: #ca2c37;
+}
+
+.category-drills a:active,
+.category-rotary-hammers a:active {
+  background-color: #ba2732;
+}
+
+.popular-products,
+.popular-manufacturers {
+  background-color: #f9f5f0;
+}
+
+.popular-products h2,
+.popular-manufacturers h2 {
+  color: #32425c;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.popular-products a,
+.popular-manufacturers a {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.popular-products a:hover,
+.popular-manufacturers a:hover {
+  background-color: #ca2c37;
+}
+
+.popular-products a:active,
+.popular-manufacturers a:active {
+  background-color: #ba2732;
+}
+
+.catalog-manufacturers li {
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.catalog-manufacturers li:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.catalog-manufacturers li:active {
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+}
+
+.services {
+  background-color: #f5f8fa;
+}
+
+.services h2 {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services p {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.services h3 {
+  color: #32425c;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.services button {
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  background-color: #32425c;
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.services button:hover {
+  background-color: #293449;
+}
+
+.services button:focus {
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.services a {
+  background-color: #ff5357;
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.services a:hover {
+  background-color: #ca2c37;
+}
+
+.services a:active {
+  background-color: #ba2732;
+}
+
 .catalog-navigation a {
   color: #000000;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -256,6 +480,34 @@ ul {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter h2 {
+  background-color: #f7f3ec;
+  color: #000000;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.filter-price h3 {
+  color: #000000;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-price input {
+  background-color: #f7f3ec;
+  color: #000000;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
   text-transform: uppercase;
 }
 
@@ -300,6 +552,42 @@ ul {
   background-color: #ffffff;
 }
 
+.sorting {
+  background-color: #f7f3ec;
+}
+
+.sorting h2 {
+  color: #000000;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.sorting li {
+  opacity: 0.3;
+  color: #000000;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting li:hover {
+  opacity: 1;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting li:active {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.sorting li:nth-of-type(4),
+.sorting li:last-of-type {
+  border-bottom: none;
+}
+
 .catalog-products li {
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
@@ -335,6 +623,50 @@ ul {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
+}
+
+.page-switching a {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.page-switching a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.page-switching a:active {
+  border: 1px solid #ee3643;
+}
+
+.page-switching:visited {
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.catalog-information {
+  background-color: #f2f6f8;
+}
+
+.catalog-information h2 {
+  color: #000000;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-information p {
+  color: #000000;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .company-description h2 {
@@ -393,7 +725,7 @@ ul {
   background-color: #f6f7f6;
 }
 
-.company-contacts a:last-of-type {
+.write-us {
   color: #ffffff;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
@@ -401,6 +733,16 @@ ul {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
+}
+
+.company-description a:hover,
+.write-us:hover {
+  background-color: #ca2c37;
+}
+
+.company-description a:active,
+.write-us:active {
+  background-color: #ba2732;
 }
 
 .footer-top {

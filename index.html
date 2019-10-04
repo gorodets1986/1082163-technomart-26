@@ -81,7 +81,7 @@
   <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
   <section>
     <h2 class="visually-hidden">Ссылки на категории</h2>
-    <div>
+    <div class="category-materials">
       <h3>
         Материалы
       </h3>
@@ -92,7 +92,7 @@
         Новинка
       </div>
     </div>
-    <div>
+    <div class="category-tool">
       <h3>
         Инструмент
       </h3>
@@ -100,7 +100,7 @@
         На все случаи
       </a>
     </div>
-    <div>
+    <div class="category-technics">
       <h3>
         Техника
       </h3>
@@ -108,7 +108,7 @@
         для стройки
       </a>
     </div>
-    <div>
+    <div class="category-discounts">
       <h3>
         Скидки 50%
       </h3>
@@ -116,7 +116,7 @@
         На 350 товаров
       </a>
     </div>
-    <div>
+    <div class="category-delivery">
       <h3>
         Доставка
       </h3>
@@ -124,7 +124,7 @@
         бесплатно
       </a>
     </div>
-    <div>
+    <div class="category-drills">
       <h3>
         Дрели
       </h3>
@@ -135,7 +135,7 @@
       <button type="button">Следующая</button>
       <a href="catalog.html">Открыть каталог</a>
     </div>
-    <div>
+    <div class="category-rotary-hammers">
       <h3>
         Перфораторы
       </h3>
@@ -148,11 +148,11 @@
     </div>
   </section>
   <section>
-    <div>
+    <div class="popular-products">
       <h2>Популярные товары:</h2>
       <a href="">Все популярные товары</a>
     </div>
-    <ul>
+    <ul class="catalog-products">
       <li>
         <img src="img/bosch_bfg_9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
         <p>
@@ -164,7 +164,7 @@
         <p>
           25500 Р.
         </p>
-        <div>
+        <div class="visually-hidden">
           <a href="">Купить</a>
           <a href="">В закладки</a>
         </div>
@@ -180,7 +180,7 @@
         <p>
           15500 Р.
         </p>
-        <div>
+        <div class="visually-hidden">
           <a href="">Купить</a>
           <a href="">В закладки</a>
         </div>
@@ -196,7 +196,7 @@
         <p>
           25500 Р.
         </p>
-        <div>
+        <div class="visually-hidden">
           <a href="">Купить</a>
           <a href="">В закладки</a>
         </div>
@@ -215,7 +215,7 @@
         <div>
           Новинка
         </div>
-        <div>
+        <div class="visually-hidden">
           <a href="">Купить</a>
           <a href="">В закладки</a>
         </div>
@@ -223,9 +223,11 @@
     </ul>
   </section>
   <section>
-    <h2>Популярные производители:</h2>
-    <a href="">Все производители</a>
-    <ul>
+    <div class="popular-manufacturers">
+      <h2>Популярные производители:</h2>
+      <a href="">Все производители</a>
+    </div>
+    <ul class="catalog-manufacturers">
       <li>
         <a href="">
           <img src="img/logo_bosch.jpg" width="220" height="145" alt="Bosch">
@@ -268,7 +270,7 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="services">
     <h2>Сервисы</h2>
     <p>
       Хороший интернет-магазин отличается от плохого не только ценами!
@@ -277,9 +279,9 @@
     <button type="button">Доставка</button>
     <button type="button">Гарантия</button>
     <button type="button">Кредит</button>
-    <p>
+    <h3>
       Доставка
-    </p>
+    </h3>
     <p>
       Мы с удовольствием доставим ваш товар прямо<br>
       к вашему подъезду совершенно бесплатно!
@@ -287,7 +289,7 @@
       поднимая его на ваш этаж!
     </p>
   </section>
-  <section>
+  <section class="services">
     <h2>Сервисы</h2>
     <p>
       Хороший интернет-магазин отличается от плохого не только ценами!
@@ -296,16 +298,16 @@
     <button type="button">Доставка</button>
     <button type="button">Гарантия</button>
     <button type="button">Кредит</button>
-    <p>
+    <h3>
       Гарантия
-    </p>
+    </h3>
     <p>
       Если купленный у нас товар поломается или заискрит,<br>
       а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
       Дом уж восстановите как-нибудь сами.
     </p>
   </section>
-  <section>
+  <section class="services">
     <h2>Сервисы</h2>
     <p>
       Хороший интернет-магазин отличается от плохого не только ценами!
@@ -314,9 +316,9 @@
     <button type="button">Доставка</button>
     <button type="button">Гарантия</button>
     <button type="button">Кредит</button>
-    <p>
+    <h3>
       Кредит
-    </p>
+    </h3>
     <p>
       Залезть в долговую яму стало проще!<br>
       Кредитные консультанты придут вам на помощь.
@@ -355,7 +357,7 @@
     <a href="" class="map-mini">
       <img src="img/map-min.png" width="300" height="158" alt="Карта">
     </a>
-    <a href="">Заблудились? Напишите нам!</a>
+    <a href="" class="write-us">Заблудились? Напишите нам!</a>
   </section>
 </main>
 <footer>
