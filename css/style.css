@@ -172,8 +172,8 @@ ul {
   opacity: 0.3;
 }
 
-.user-link img,
-.logout-link {
+.user-link svg,
+.logout-link svg {
   opacity: 0.3;
 }
 
@@ -185,8 +185,8 @@ ul {
   line-height: 21px;
 }
 
-.user-link:hover img,
-.logout-link:hover {
+.user-link:hover svg,
+.logout-link:hover svg {
   opacity: 1;
 }
 
@@ -597,11 +597,14 @@ ul {
   border-bottom: none;
 }
 
-.sorting-link a:active,
-.sorting-link .reverse-order:active,
-.sorting-link .in-order:active {
+.sorting-link a:active {
   color: #ee3643;
   border-bottom: none;
+}
+
+.reverse-order:active svg,
+.in-order:active svg {
+  fill: #ee3643;
 }
 
 .catalog-products li {
