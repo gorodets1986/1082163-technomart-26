@@ -113,7 +113,7 @@ ul {
 
 .header-menu-order:active {
   background-color: #518534;
-  opacity: 0.5;
+  color: rgba(255,255,255, 0.5);
 }
 
 .header-info-description {
@@ -172,7 +172,12 @@ ul {
   opacity: 0.3;
 }
 
-.user-link {
+.user-link img,
+.logout-link {
+  opacity: 0.3;
+}
+
+.user-link p {
   color: #000000;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 21px;
@@ -180,13 +185,15 @@ ul {
   line-height: 21px;
 }
 
-.user-link:active,
-.user-link:active p {
-  opacity: 0.3;
+.user-link:hover img,
+.logout-link:hover {
+  opacity: 1;
 }
 
-.logout-link img {
-  color: #c5c5c5;
+.user-link:active,
+.user-link:active p,
+.logout-link:active {
+  opacity: 0.3;
 }
 
 .my-orders-link {
@@ -564,7 +571,7 @@ ul {
   line-height: 18px;
 }
 
-.sorting li {
+.sorting-link a {
   opacity: 0.3;
   color: #000000;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -573,18 +580,27 @@ ul {
   border-bottom: 1px dotted #ee3643;
 }
 
-.sorting li:hover {
+.sorting-link .reverse-order,
+.sorting-link .in-order {
+  border-bottom: none;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sorting-link a:hover {
   opacity: 1;
   border-bottom: 1px solid #ee3643;
 }
 
-.sorting li:active {
-  color: #ee3643;
+.sorting-link .reverse-order:hover,
+.sorting-link .in-order:hover {
   border-bottom: none;
 }
 
-.sorting li:nth-of-type(4),
-.sorting li:last-of-type {
+.sorting-link a:active,
+.sorting-link .reverse-order:active,
+.sorting-link .in-order:active {
+  color: #ee3643;
   border-bottom: none;
 }
 
@@ -770,7 +786,7 @@ ul {
 }
 
 .footer-menu a {
-  color: #ffd180;
+  color: #ffda96;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -822,7 +838,7 @@ ul {
 }
 
 .footer-feedback span {
-  color: #ffd180;
+  color: #ffda96;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -838,7 +854,7 @@ ul {
 }
 
 .footer-designed a {
-  color: #ffd180;
+  color: #ffda96;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
