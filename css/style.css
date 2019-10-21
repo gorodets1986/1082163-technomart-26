@@ -1605,7 +1605,17 @@ img {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  margin-left: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.product-on-top p::before {
+  content: "";
+  background-image: url('../img/icon-product-on.svg');
+  width: 66px;
+  height: 66px;
+  display: block;
+  margin-right: 32px;
 }
 
 .product-on-bottom {
