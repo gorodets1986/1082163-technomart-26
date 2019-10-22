@@ -8,7 +8,11 @@ img {
   max-width: 100%
 }
 
-.visually-hidden {
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.display-none {
   display: none;
 }
 
@@ -370,6 +374,12 @@ img {
   display: flex;
   padding-left: 17px;
   list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.personal-navigation li {
+  position: relative;
 }
 
 .my-orders-link {
@@ -389,6 +399,12 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-decoration: underline;
+}
+
+.link-separator {
+  position: absolute;
+  top: 7px;
+  left: -16px;
 }
 
 .my-orders-link:hover,
@@ -431,46 +447,31 @@ img {
   opacity: 0.5;
 }
 
-.category-materials h3,
-.category-tool h3,
-.category-technics h3,
-.category-discounts h3,
-.category-delivery h3 {
-  color: #ffffff;
-  font-family: 'Cuprum', 'Arial', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 30px;
+.category-main {
+  margin-top: 59px;
+  margin-bottom: 53px;
+  display: flex;
 }
 
-.category-materials a,
-.category-tool a,
-.category-technics a,
-.category-discounts a,
-.category-delivery a {
-  color: #ffffff;
-  font-family: 'Cuprum', 'Arial', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.1);
+.category-main-left {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.category-materials a:hover,
-.category-tool a:hover,
-.category-technics a:hover,
-.category-discounts a:hover,
-.category-delivery a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+.category-materials,
+.category-delivery,
+.category-tool,
+.category-technics,
+.category-discounts {
+  width: 300px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-.category-materials a:active,
-.category-tool a:active,
-.category-technics a:active,
-.category-discounts a:active,
-.category-delivery a:active {
-  background-color: rgba(0, 0, 0, 0.3);
+.category-materials {
+  margin-right: 20px;
 }
 
 .category-materials,
@@ -490,44 +491,154 @@ img {
   background-color: #8ed78f;
 }
 
-.category-drills {
-  background-image: url(/img/drill.jpg);
-  background-color: #644b34;
-}
-
-.category-rotary-hammers {
-  background-image: url(/img/rotary_hammers.jpg);
-  background-color: #aaa298;
-}
-
-.category-drills h3,
-.category-rotary-hammers h3 {
+.category-materials h3,
+.category-tool h3,
+.category-technics h3,
+.category-discounts h3,
+.category-delivery h3 {
   color: #ffffff;
   font-family: 'Cuprum', 'Arial', sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
+  line-height: 22px;
+  margin-left: 23px;
+  margin-top: 26px;
+  margin-bottom: 15px;
 }
 
-.category-drills p,
-.category-rotary-hammers p {
-  color: #ffffff;
-  font-family: 'Cuprum', 'Arial', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.category-drills a,
-.category-rotary-hammers a {
-  background-color: #ee3643;
+.category-materials a,
+.category-tool a,
+.category-technics a,
+.category-discounts a,
+.category-delivery a {
+  display: block;
   color: #ffffff;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  width: 135px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 25px;
+  margin-bottom: 22px;
+}
+
+.category-materials a:hover,
+.category-tool a:hover,
+.category-technics a:hover,
+.category-discounts a:hover,
+.category-delivery a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.category-materials a:active,
+.category-tool a:active,
+.category-technics a:active,
+.category-discounts a:active,
+.category-delivery a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.category-materials svg {
+  position: absolute;
+  top: 31px;
+  right: 43px;
+}
+
+.category-tool svg {
+  position: absolute;
+  top: 33px;
+  right: 28px;
+}
+
+.category-technics svg {
+  position: absolute;
+  top: 31px;
+  right: 21px;
+}
+
+.category-discounts svg {
+  position: absolute;
+  top: 26px;
+  right: 45px;
+}
+
+.category-delivery svg {
+  position: absolute;
+  top: 32px;
+  right: 31px;
+}
+
+.category-drills {
+  background-image: url(../img/drill.jpg);
+  background-repeat: no-repeat;
+  background-color: #644b34;
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.category-rotary-hammers {
+  background-image: url(../img/rotary_hammers.jpg);
+  background-repeat: no-repeat;
+  background-color: #aaa298;
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 142px;
+  left: 0;
+}
+
+.category-drills h3,
+.category-rotary-hammers h3 {
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 26px;
+  margin-left: 25px;
+  margin-bottom: 8px;
+}
+
+.category-drills p,
+.category-rotary-hammers p {
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-left: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.category-drills a,
+.category-rotary-hammers a {
+  width: 195px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  border-radius: 3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 125px;
+  margin-left: 25px;
+  margin-bottom: 22px;
 }
 
 .category-drills a:hover,
@@ -540,9 +651,32 @@ img {
   background-color: #ba2732;
 }
 
+.category-button-left {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 114px;
+  left: 25px;
+}
+
+.category-button-right {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 114px;
+  right: 20px;
+}
+
+.category-main-right div:last-of-type {
+  margin-bottom: 0;
+}
+
 .popular-products,
 .popular-manufacturers {
   background-color: #f9f5f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .popular-products h2,
@@ -553,6 +687,9 @@ img {
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 29px;
+  margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 .popular-products a,
@@ -564,6 +701,14 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
+  width: 253px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 3px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  margin-right: 24px;
 }
 
 .popular-products a:hover,
@@ -576,13 +721,63 @@ img {
   background-color: #ba2732;
 }
 
+.catalog-products-popular {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  list-style-type: none;
+}
+
+.catalog-products-popular li {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  width: 220px;
+  margin-right: 17px;
+  position: relative;
+  overflow: hidden;
+}
+
+.catalog-products-popular li:last-of-type {
+  margin-right: 0;
+}
+
+.catalog-products-popular li:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.catalog-products-popular li:hover .product-control {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 218px;
+  height: 164px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .catalog-manufacturers {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 85px;
 }
 
 .catalog-manufacturers li {
   border: 1px solid #eaeaea;
   background-color: #ffffff;
+  width: 220px;
+  height: 143px;
+  margin-right: 17px;
+  margin-bottom: 20px;
+}
+
+.catalog-manufacturers li:nth-of-type(4n) {
+  margin-right: 0;
 }
 
 .catalog-manufacturers li:hover {
@@ -597,22 +792,38 @@ img {
   background-color: #f5f8fa;
 }
 
-.services h2 {
+.container-services {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container-services h2 {
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 68px;
+  width: 426px;
 }
 
-.services p {
+.container-services p {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  width: 426px;
 }
 
-.services h3 {
+.description {
+  position: absolute;
+  top: 240px;
+  left: 320px;
+  z-index: 2;
+}
+
+.description h3 {
   color: #32425c;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 36px;
@@ -621,7 +832,21 @@ img {
   text-transform: uppercase;
 }
 
-.services button {
+.description p {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.services-button {
+  margin-top: 74px;
+  margin-bottom: 99px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-button button {
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
   background-color: #32425c;
   color: #ffffff;
@@ -629,19 +854,26 @@ img {
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
+  text-align: left;
+  width: 240px;
+  padding-top: 21px;
+  padding-left: 23px;
+  padding-bottom: 21px;
+  border: none;
 }
 
-.services button:hover {
+.services-button button:hover {
   background-color: #293449;
 }
 
-.services button:focus {
+.services-button button:focus {
   box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
   background-color: #ffffff;
   color: #32425c;
 }
 
-.services a {
+.description a {
+  display: block;
   background-color: #ff5357;
   color: #ffffff;
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -649,14 +881,25 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
+  width: 195px;
+  margin-top: 31px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
-.services a:hover {
+.container-services a:hover {
   background-color: #ca2c37;
 }
 
-.services a:active {
+.container-services a:active {
   background-color: #ba2732;
+}
+
+.container-services img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .catalog-navigation {
@@ -731,6 +974,16 @@ img {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  padding-top: 10px;
+  padding-left: 18px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.filter-price {
+  border: none;
+  padding: 20px 0 25px;
+  margin: 0;
 }
 
 .filter-price h3 {
@@ -740,9 +993,39 @@ img {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0 0 21px;
 }
 
-.filter-price input {
+.filter-price-range {
+  width: 220px;
+  background-color: #f7f3ec;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.filter-price-range input {
+  width: 180px;
+  margin: 39px 20px;
+}
+
+.filter-price-min,
+.filter-price-max {
+  width: 95px;
+}
+
+.filter-price-min {
+  margin-right: 8px;
+}
+
+.filter-price-max {
+  margin-left: 8px;
+}
+
+.filter-price-min input,
+.filter-price-max input {
+  width: 95px;
+  padding-top: 12px;
+  padding-bottom: 14px;
   background-color: #f7f3ec;
   color: #000000;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -750,6 +1033,8 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
+  border: none;
 }
 
 .filter-manufacturers {
@@ -904,6 +1189,7 @@ img {
   background-color: #f7f3ec;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .sorting h2 {
@@ -912,12 +1198,16 @@ img {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  margin-left: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .sorting-link {
   display: flex;
-  justify-content: space-around;
   list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .sorting-link a {
@@ -934,6 +1224,23 @@ img {
   border-bottom: none;
   opacity: 0.3;
   color: #000000;
+}
+
+.sorting-link .in-order {
+  margin-left: 21px;
+  margin-right: 17px;
+}
+
+.sorting-link .reverse-order {
+  margin-left: 46px;
+}
+
+.sorting-link .by-functionality {
+  margin-left: 65px;
+}
+
+.sorting-link .type {
+  margin-left: 71px;
 }
 
 .sorting-link a:hover {
@@ -954,6 +1261,11 @@ img {
 .reverse-order:active svg,
 .in-order:active svg {
   fill: #ee3643;
+}
+
+.section-products {
+  margin-top: 21px;
+  margin-bottom: 31px;
 }
 
 .catalog-products {
@@ -1128,6 +1440,10 @@ img {
 .to-bookmarks:active {
   opacity: 0.3;
 }
+.page-switching {
+  margin-bottom: 60px;
+  display: flex;
+}
 
 .page-switching a {
   border: 1px solid #e5e5e5;
@@ -1137,6 +1453,17 @@ img {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  text-align: center;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 36px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.page-switching .next-page {
+  width: 140px;
 }
 
 .page-switching a:hover {
@@ -1147,13 +1474,16 @@ img {
   border: 1px solid #ee3643;
 }
 
-.page-switching:visited {
+.page-switching a:visited {
   background-color: #ee3643;
   color: #ffffff;
 }
 
 .catalog-information {
   background-color: #f2f6f8;
+  margin: 0;
+  padding-top: 67px;
+  padding-bottom: 73px;
 }
 
 .catalog-information h2 {
@@ -1163,6 +1493,8 @@ img {
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .catalog-information p {
@@ -1171,6 +1503,7 @@ img {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin: 0;
 }
 
 .company {
@@ -1202,7 +1535,7 @@ img {
   line-height: 24px;
 }
 
-.company-description ul {
+.transport-companies {
   color: #000000;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 18px;
@@ -1211,8 +1544,20 @@ img {
   list-style-type: none;
 }
 
-.company-description li {
+.transport-companies li {
   margin-top: 20px;
+  position: relative;
+}
+
+.transport-companies li::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  position: absolute;
+  top: 9px;
+  left: -40px;
 }
 
 .company-description a {
