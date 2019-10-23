@@ -155,6 +155,11 @@ img {
   line-height: 18px;
 }
 
+.item-in-cart,
+.bookmark-added {
+  background-color: #ee3643;
+}
+
 .header-menu-cart svg {
   fill: #ffffff;
   opacity: 0.3;
