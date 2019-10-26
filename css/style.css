@@ -460,7 +460,7 @@ img {
 
 .site-navigation-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #32425c;
   border-bottom: 4px solid #1d2739;
   padding: 0;
@@ -1852,15 +1852,19 @@ img {
 }
 
 .write-us-popup {
+  width: 620px;
+  height: 430px;
   position: fixed;
-  bottom: 201px;
-  right: 25%;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   background-color: #ffffff;
   z-index: 999;
 }
 
 .write-us-form {
-  width: 620px;
   padding-top: 55px;
   border-top: 7px solid #ee3643;
   position: relative;
@@ -1951,7 +1955,9 @@ img {
   margin: auto;
   right: 0;
   left: 0;
-  bottom: 201px;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
 }
 
 .map-popup-container {
