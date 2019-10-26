@@ -491,15 +491,15 @@
   <form action="#" method="post" class="write-us-form">
     <label  class="write-us-name">
       Ваше имя:
-      <input type="text" placeholder="Имя Фамилия" required>
+      <input type="text" name="name" placeholder="Имя Фамилия">
     </label>
     <label class="write-us-mail">
       Ваш e-mail:
-      <input type="email" placeholder="email@example.com" required>
+      <input type="email" name="email" placeholder="email@example.com">
     </label>
     <label class="write-us-text">
       Текст письма:
-      <textarea placeholder="В свободной форме"></textarea>
+      <textarea placeholder="В свободной форме" name="text"></textarea>
     </label>
     <div class="write-us-button">
       <button type="submit">Отправить</button>
@@ -510,9 +510,12 @@
 <section class="container map-popup visually-hidden">
   <div class="map-popup-container">
     <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CGHArK5k" width="940" height="447" frameborder="1" allowfullscreen="true"></iframe>
     <img src="img/map-big.png" width="940" height="447" alt="Карта">
-    <button type="button" aria-label="Закрыть"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
+    <button type="button" aria-label="Закрыть" class="map-close"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
   </div>
 </section>
+<script src="js/popup-write-us.js"></script>
+<script src="js/map-popup.js"></script>
 </body>
 </html>
