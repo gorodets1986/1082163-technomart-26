@@ -3,6 +3,7 @@ let writeUsLink = document.querySelector(".write-us");
 let writeUsPopup = document.querySelector(".write-us-popup");
 let writeUsForm = writeUsPopup.querySelector(".write-us-form");
 let closePopup = document.querySelector(".write-us-close");
+let writeUsButton = document.querySelector(".write-us-button button");
 let writeUsName = writeUsPopup.querySelector("[name=name]");
 let writeUsEmail = writeUsPopup.querySelector("[name=email]");
 let writeUsText = writeUsPopup.querySelector("[name=text]");
@@ -22,22 +23,18 @@ try {
 writeUsLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeUsPopup.classList.add("popup-show");
+  writeUsName.focus();
   if (storageName) {
     writeUsName.value = storageName;
     writeUsEmail.focus();
-  } else {
-    writeUsName.focus();
   }
-
   if (storageEmail) {
     writeUsEmail.value = storageEmail;
     writeUsText.focus();
-  } else {
-    writeUsEmail.focus();
   }
-
-  if (storageText) {
+  if (storageText){
     writeUsText.value = storageText;
+    writeUsButton.focus();
   }
 });
 
