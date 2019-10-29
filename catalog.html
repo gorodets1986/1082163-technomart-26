@@ -115,16 +115,36 @@
         <form action="#" method="post">
           <fieldset class="filter-price">
             <h3>Цена:</h3>
-            <label class="filter-price-range">
-              <input type="range" name="price" min="0" max="50000" step="1" value="30000">
-            </label>
-            <label class="filter-price-min">
-              <input type="number" name="price" min="0" max="50000" step="1" value="0">
-            </label>
-            -
-            <label class="filter-price-max">
-              <input type="number" name="price" min="0" max="50000" step="1" value="30000">
-            </label>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                -
+                <label class="max-price"><input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+
+
+
+
+<!--            <label class="filter-price-range">-->
+<!--              <div class="filter-price-scale">-->
+<!--                <input type="range" name="price" min="0" max="50000" step="1" value="30000">-->
+<!--              </div>-->
+<!--            </label>-->
+<!--            <label class="filter-price-min">-->
+<!--              <input type="number" name="price" min="0" max="50000" step="1" value="0">-->
+<!--            </label>-->
+<!--            - -->
+<!--            <label class="filter-price-max">-->
+<!--              <input type="number" name="price" min="0" max="50000" step="1" value="30000">-->
+<!--            </label>-->
           </fieldset>
           <fieldset class="filter-manufacturers">
             <h3>Производители:</h3>
