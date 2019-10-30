@@ -465,6 +465,7 @@ img {
   background-color: #32425c;
   border-bottom: 4px solid #1d2739;
   padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
@@ -1002,8 +1003,8 @@ img {
 .catalog-navigation {
   display: flex;
   align-items: center;
-  margin-top: 23px;
-  margin-bottom: 24px;
+  margin-top: 20px;
+  margin-bottom: 22px;
   padding: 0;
   list-style-type: none;
 }
@@ -1047,8 +1048,9 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   padding-left: 28px;
-  padding-top: 26px;
-  padding-bottom: 34px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-bottom: 21px;
 }
 
 .catalog-main {
@@ -1079,7 +1081,7 @@ img {
 
 .filter-price {
   border: none;
-  padding: 20px 0 22px;
+  padding: 11px 0 22px;
   margin: 0;
 }
 
@@ -1090,13 +1092,13 @@ img {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 0 0 21px;
+  margin: 0 0 14px;
 }
 
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1110,14 +1112,15 @@ img {
 }
 
 .range-controls .bar {
-  width: 70%;
+  margin-left: 0;
+  width: 152px;
   height: 2px;
   background: #00ca74;
 }
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -1130,11 +1133,11 @@ img {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls label {
@@ -1165,54 +1168,6 @@ img {
 .max-price {
   margin-left: 8px;
 }
-
-/*.filter-price-range {
-  width: 220px;
-  background-color: #f7f3ec;
-  display: block;
-  margin-bottom: 9px;
-  position: relative;
-}
-
-.filter-price-scale {
-
-}
-
-.filter-price-range input {
-  width: 180px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 39px 20px 39px;
-}
-
-.filter-price-min,
-.filter-price-max {
-  width: 95px;
-}
-
-.filter-price-min {
-  margin-right: 8px;
-}
-
-.filter-price-max {
-  margin-left: 8px;
-}
-
-.filter-price-min input,
-.filter-price-max input {
-  width: 93px;
-  padding-top: 12px;
-  padding-bottom: 14px;
-  background-color: #f7f3ec;
-  color: #000000;
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-}*/
 
 .filter-manufacturers {
   display: flex;
@@ -1340,10 +1295,10 @@ img {
 }
 
 .filter-button {
-  border: 1px solid #e5e5e5;
+  outline: 1px solid #e5e5e5;
   background-color: #ffffff;
-  width: 140px;
-  padding-top: 9px;
+  width: 141px;
+  padding-top: 8px;
   padding-bottom: 9px;
   color: #000000;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -1351,6 +1306,7 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .filter-button:hover {
@@ -1382,7 +1338,7 @@ img {
 .sorting-link {
   display: flex;
   list-style-type: none;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-bottom: 10px;
 }
 
@@ -1393,6 +1349,7 @@ img {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .sorting-link .reverse-order,
@@ -1411,15 +1368,15 @@ img {
 }
 
 .sorting-link .by-functionality {
-  margin-right: 46px;
+  margin-right: 47px;
 }
 
 .sorting-link .type {
-  margin-right: 85px;
+  margin-right: 65px;
 }
 
 .sorting-link .by-price {
-  margin-right: 83px;
+  margin-right: 70px;
 }
 
 .sorting-link a:hover {
@@ -1443,7 +1400,7 @@ img {
 }
 
 .section-products {
-  margin-top: 18px;
+  margin-top: 20px;
   margin-bottom: 31px;
 }
 
@@ -2098,7 +2055,7 @@ img {
   left: 0;
   top: 0;
   bottom: 0;
-  z-index: 4;
+  z-index: 999;
   box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
 }
 
@@ -2132,13 +2089,15 @@ img {
 
 .product-on-popup {
   width: 620px;
+  height: 282px;
   border-top: 7px solid #ee3643;
   background-color: #ffffff;
   position: fixed;
   margin: auto;
   right: 0;
   left: 0;
-  bottom: 201px;
+  top: 0;
+  bottom: 0;
   z-index: 999;
 }
 
@@ -2211,7 +2170,7 @@ img {
   text-transform: uppercase;
 }
 
-.product-on-popup button {
+.product-on-popup .product-on-close {
   position: absolute;
   background-color: transparent;
   border: none;
